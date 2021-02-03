@@ -11,4 +11,5 @@ package hr.algebra.interfaces;
  */
 public interface Vehicle {
     public int getPrice();
+    public double getFuelPrecentage();
 }

@@ -10,5 +10,7 @@ package hr.algebra.interfaces;
  * @author 38598
  */
 public interface Worker {
-    
+    public double getPayPrecentage();
+    public double getCurrentPay();
+    public void addPay(double amount);
 }

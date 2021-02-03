@@ -44,4 +44,9 @@ public class BigTrain implements Train {
         vehicles.add(vehicle);
     }
 
+    @Override
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
 }

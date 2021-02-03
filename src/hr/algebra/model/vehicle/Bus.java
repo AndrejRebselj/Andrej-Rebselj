@@ -6,6 +6,7 @@
 package hr.algebra.model.vehicle;
 
 import hr.algebra.interfaces.Vehicle;
+import java.util.Random;
 
 /**
  *
@@ -14,11 +15,22 @@ import hr.algebra.interfaces.Vehicle;
 public class Bus implements Vehicle {
 
     private final int busPrice = 70;
+    private static double fulePrecentage = 0;
 
+    public Bus() {
+        Random r = new Random();
+        fulePrecentage = r.nextDouble()*100;
+    }
+    
     @Override
     public int getPrice() {
 
         return busPrice;
+    }
+
+    @Override
+    public double getFuelPrecentage() {
+        return fulePrecentage;
     }
 
 }

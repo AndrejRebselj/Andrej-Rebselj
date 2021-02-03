@@ -43,5 +43,10 @@ public class SmallTrain implements Train {
     public void addVehicle(Vehicle vehicle) {
         vehicles.add(vehicle);
     }
+
+    @Override
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
     
 }
